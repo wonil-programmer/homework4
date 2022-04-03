@@ -120,7 +120,7 @@ int** create_matrix(int row, int col)
     // int형 이중포인터 변수 matrix 선언 : 입력된 행 크기를 갖는 포인터배열을 가리키는 이중포인터
     // 이중 포인터에 행 크기만큼의 메모리를 할당
 	for (int r = 0; r < row; r++) { 
-        // for반복문을 행크기 만큼 돌며 포인터배열의 성분에 차례대로 열 크기만큼의 메모리를 할당
+        // for반복문을 행크기 만큼 돌며 포인터배열의 원소에 차례대로 열 크기만큼의 메모리를 할당
 		matrix[r] = (int*)malloc(sizeof(int) * col);
 	}
 
